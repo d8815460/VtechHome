@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rLg-PG-cSe">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Location-->
+        <scene sceneID="Y3F-F4-KZq">
+            <objects>
+                <viewController storyboardIdentifier="locationChooserVC" hidesBottomBarWhenPushed="YES" id="rLg-PG-cSe" customClass="VTLocationChooserVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mI4-Dz-Wa7"/>
+                        <viewControllerLayoutGuide type="bottom" id="8XL-TS-X5b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5RX-eA-9kS">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assign DEVICE_NAME to a location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egr-4g-zIM">
+                                <rect key="frame" x="20" y="20" width="335" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="avo-jK-1o2">
+                                <rect key="frame" x="0.0" y="61" width="375" height="542"/>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" textLabel="nLz-b6-aG6" style="IBUITableViewCellStyleDefault" id="ent-Kr-Z2w">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ent-Kr-Z2w" id="Sd3-De-HxJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nLz-b6-aG6">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rLg-PG-cSe" id="CgH-3k-Pmg"/>
+                                    <outlet property="delegate" destination="rLg-PG-cSe" id="jzG-T0-Tcb"/>
+                                </connections>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggu-6l-9tW">
+                                <rect key="frame" x="0.0" y="559" width="375" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Delete all" id="aBJ-5K-oiM">
+                                        <connections>
+                                            <action selector="doDeleteAllCustomLocations" destination="rLg-PG-cSe" id="V7B-Z1-6Rr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="deE-K7-Mes"/>
+                                    <barButtonItem title="Delete" id="44G-jk-PZb">
+                                        <connections>
+                                            <action selector="doDeleteSelectedCutomLocations" destination="rLg-PG-cSe" id="T7E-Yj-pdT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="heL-Gy-YOt">
+                                <rect key="frame" x="0.0" y="519" width="375" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaT-oy-hB2">
+                                        <rect key="frame" x="20" y="20" width="335" height="44"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="bHn-46-SDR"/>
+                                        </constraints>
+                                        <state key="normal" title="Add new location"/>
+                                        <connections>
+                                            <action selector="doAddCustomLocation" destination="rLg-PG-cSe" eventType="touchUpInside" id="PME-EC-NnM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="XaT-oy-hB2" firstAttribute="top" secondItem="heL-Gy-YOt" secondAttribute="top" constant="20" id="ASY-4k-4kE"/>
+                                    <constraint firstItem="XaT-oy-hB2" firstAttribute="leading" secondItem="heL-Gy-YOt" secondAttribute="leading" constant="20" id="U8r-un-gYu"/>
+                                    <constraint firstAttribute="bottom" secondItem="XaT-oy-hB2" secondAttribute="bottom" constant="20" id="Wem-4B-gjD"/>
+                                    <constraint firstAttribute="height" constant="84" id="fAs-cP-xFk"/>
+                                    <constraint firstAttribute="trailing" secondItem="XaT-oy-hB2" secondAttribute="trailing" constant="20" id="hKX-iT-2rS"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fAs-cP-xFk"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="avo-jK-1o2" firstAttribute="leading" secondItem="5RX-eA-9kS" secondAttribute="leading" id="4yf-b1-uo3"/>
+                            <constraint firstItem="Ggu-6l-9tW" firstAttribute="leading" secondItem="5RX-eA-9kS" secondAttribute="leading" id="8xD-Fc-C31"/>
+                            <constraint firstAttribute="trailing" secondItem="egr-4g-zIM" secondAttribute="trailing" constant="20" id="E9M-Ik-tEt"/>
+                            <constraint firstItem="8XL-TS-X5b" firstAttribute="top" secondItem="heL-Gy-YOt" secondAttribute="bottom" id="Hdm-1S-EzY"/>
+                            <constraint firstAttribute="trailing" secondItem="avo-jK-1o2" secondAttribute="trailing" id="KI5-wX-GwQ"/>
+                            <constraint firstItem="8XL-TS-X5b" firstAttribute="top" secondItem="avo-jK-1o2" secondAttribute="bottom" id="QST-Zy-fhd"/>
+                            <constraint firstItem="egr-4g-zIM" firstAttribute="top" secondItem="mI4-Dz-Wa7" secondAttribute="bottom" constant="20" id="TA2-kB-7QC"/>
+                            <constraint firstItem="heL-Gy-YOt" firstAttribute="leading" secondItem="5RX-eA-9kS" secondAttribute="leading" id="Ugb-qN-K4b"/>
+                            <constraint firstAttribute="trailing" secondItem="heL-Gy-YOt" secondAttribute="trailing" id="ZB2-mk-9Wo"/>
+                            <constraint firstAttribute="trailing" secondItem="Ggu-6l-9tW" secondAttribute="trailing" id="aUv-1S-RNU"/>
+                            <constraint firstItem="egr-4g-zIM" firstAttribute="leading" secondItem="Ggu-6l-9tW" secondAttribute="trailing" constant="20" id="fWY-Hu-yep"/>
+                            <constraint firstItem="8XL-TS-X5b" firstAttribute="top" secondItem="Ggu-6l-9tW" secondAttribute="bottom" id="n5e-au-F4Z"/>
+                            <constraint firstItem="Ggu-6l-9tW" firstAttribute="top" secondItem="heL-Gy-YOt" secondAttribute="bottom" constant="193" id="tx0-qP-ovw"/>
+                            <constraint firstItem="egr-4g-zIM" firstAttribute="leading" secondItem="5RX-eA-9kS" secondAttribute="leading" constant="20" id="txe-5V-ixj"/>
+                            <constraint firstItem="avo-jK-1o2" firstAttribute="top" secondItem="egr-4g-zIM" secondAttribute="bottom" constant="20" id="wmz-o8-Vtb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fWY-Hu-yep"/>
+                                <exclude reference="tx0-qP-ovw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Location" id="OFX-O3-32B">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="1k1-5Z-hro">
+                            <connections>
+                                <action selector="doToggleEdit:" destination="rLg-PG-cSe" id="6Z5-nH-wOJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="deleteAllBarButtonItem" destination="aBJ-5K-oiM" id="zkR-ou-J9y"/>
+                        <outlet property="deleteBarButtonItem" destination="44G-jk-PZb" id="aO2-Ro-8je"/>
+                        <outlet property="headerLabel" destination="egr-4g-zIM" id="lEy-TX-1IE"/>
+                        <outlet property="normalModeCommandPanel" destination="heL-Gy-YOt" id="ADX-I2-XR5"/>
+                        <outlet property="tableView" destination="avo-jK-1o2" id="whk-tb-6on"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="146-3u-gtj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967.5" y="530.5"/>
+        </scene>
+    </scenes>
+</document>

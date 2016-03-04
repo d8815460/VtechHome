@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58243D4B1C7FC6EF009448E8 /* AccessoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58243D4A1C7FC6EF009448E8 /* AccessoryManager.swift */; };
+		58243D4D1C7FCB05009448E8 /* Accessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58243D4C1C7FCB05009448E8 /* Accessory.swift */; };
+		58725A081C8036B900FCCB46 /* CMD29.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58725A071C8036B900FCCB46 /* CMD29.swift */; };
+		58725A0A1C80394500FCCB46 /* RDTv2Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58725A091C80394500FCCB46 /* RDTv2Channel.swift */; };
+		58725A0C1C8040B200FCCB46 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58725A0B1C8040B200FCCB46 /* DeviceManager.swift */; };
+		58725A0E1C8044E800FCCB46 /* RequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58725A0D1C8044E800FCCB46 /* RequestExecutor.swift */; };
+		58725A101C80463800FCCB46 /* RequestSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58725A0F1C80463800FCCB46 /* RequestSet.swift */; };
+		58725A121C80516B00FCCB46 /* EventReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58725A111C80516B00FCCB46 /* EventReceiver.swift */; };
+		58725A141C80580600FCCB46 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58725A131C80580600FCCB46 /* HomeService.swift */; };
+		58725A161C805BB000FCCB46 /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58725A151C805BB000FCCB46 /* HomeAPI.swift */; };
+		58725A181C81E73700FCCB46 /* RDTSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58725A171C81E73700FCCB46 /* RDTSession.swift */; };
+		58725A1A1C81EFEA00FCCB46 /* ConnectionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58725A191C81EFEA00FCCB46 /* ConnectionStatus.swift */; };
+		58EB67BF1C7D3844008F880B /* HomeLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB67BE1C7D3844008F880B /* HomeLog.swift */; };
+		58EB67C11C7D3895008F880B /* IOTCAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB67C01C7D3895008F880B /* IOTCAPI.swift */; };
+		58EB67C31C7D47BF008F880B /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB67C21C7D47BF008F880B /* Log.swift */; };
+		58EB67C61C7D48D4008F880B /* NSData+ByteTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB67C51C7D48D4008F880B /* NSData+ByteTool.swift */; };
+		58EB67C91C7D49B3008F880B /* IChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB67C81C7D49B3008F880B /* IChannel.swift */; };
+		58EB67CB1C7D4A6A008F880B /* RDTv1Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB67CA1C7D4A6A008F880B /* RDTv1Channel.swift */; };
+		58EB67EB1C7E9B2D008F880B /* AVAPIs.h in Headers */ = {isa = PBXBuildFile; fileRef = 58EB67E31C7E9B2D008F880B /* AVAPIs.h */; };
+		58EB67EC1C7E9B2D008F880B /* IOTCAPIs.h in Headers */ = {isa = PBXBuildFile; fileRef = 58EB67E41C7E9B2D008F880B /* IOTCAPIs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58EB67ED1C7E9B2D008F880B /* IOTCWakeUp.h in Headers */ = {isa = PBXBuildFile; fileRef = 58EB67E51C7E9B2D008F880B /* IOTCWakeUp.h */; };
+		58EB67EE1C7E9B2D008F880B /* P2PTunnelAPIs.h in Headers */ = {isa = PBXBuildFile; fileRef = 58EB67E61C7E9B2D008F880B /* P2PTunnelAPIs.h */; };
+		58EB67EF1C7E9B2D008F880B /* RDTAPIs.h in Headers */ = {isa = PBXBuildFile; fileRef = 58EB67E71C7E9B2D008F880B /* RDTAPIs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58EB67F01C7E9B2D008F880B /* libIOTCAPIs_ALL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EB67EA1C7E9B2D008F880B /* libIOTCAPIs_ALL.a */; };
+		58EB67F21C7E9D06008F880B /* RDTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB67F11C7E9D06008F880B /* RDTAPI.swift */; };
+		58EB67F41C7EA1AB008F880B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB67F31C7EA1AB008F880B /* Request.swift */; };
+		58EB67F61C7EA3CE008F880B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB67F51C7EA3CE008F880B /* Device.swift */; };
+		58EB67F91C7EA465008F880B /* ICommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB67F81C7EA465008F880B /* ICommand.swift */; };
+		58EB67FB1C7EA4E6008F880B /* IProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB67FA1C7EA4E6008F880B /* IProtocol.swift */; };
+		58EB67FD1C7EA52D008F880B /* CommandTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB67FC1C7EA52D008F880B /* CommandTool.swift */; };
+		58EB68011C7EA62D008F880B /* JSONProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB68001C7EA62D008F880B /* JSONProtocol.swift */; };
+		58EB68031C7EA719008F880B /* CMDGetAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB68021C7EA719008F880B /* CMDGetAuthentication.swift */; };
+		58EB68071C7EA808008F880B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB68061C7EA808008F880B /* SwiftyJSON.swift */; };
+		58EB68091C7EAD04008F880B /* ByteArrayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB68081C7EAD04008F880B /* ByteArrayProtocol.swift */; };
+		58EB680B1C7EAD56008F880B /* CMD2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB680A1C7EAD56008F880B /* CMD2.swift */; };
+		58EB680D1C7FBF62008F880B /* CMD3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB680C1C7FBF62008F880B /* CMD3.swift */; };
+		58EB680F1C7FC2E8008F880B /* CMD7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB680E1C7FC2E8008F880B /* CMD7.swift */; };
+		58EB68111C7FC457008F880B /* CMD17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB68101C7FC457008F880B /* CMD17.swift */; };
+		58EB68131C7FC616008F880B /* CMD24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB68121C7FC616008F880B /* CMD24.swift */; };
+		58FFB5CD1C7C372F00559AE7 /* homesdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 58FFB5CC1C7C372F00559AE7 /* homesdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58FFB5D51C7C37D300559AE7 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FFB5D41C7C37D300559AE7 /* AppConfig.swift */; };
+		58FFB5DC1C7C3C1600559AE7 /* ProductCodeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FFB5DB1C7C3C1600559AE7 /* ProductCodeSet.swift */; };
+		58FFB5DE1C7C41B500559AE7 /* AccessoryTypeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FFB5DD1C7C41B500559AE7 /* AccessoryTypeSet.swift */; };
+		58FFB5E01C7C431D00559AE7 /* V1FunctionCodeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FFB5DF1C7C431D00559AE7 /* V1FunctionCodeSet.swift */; };
+		58FFB5E71C7D2DE600559AE7 /* V2FunctionCodeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FFB5E61C7D2DE600559AE7 /* V2FunctionCodeSet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58243D4A1C7FC6EF009448E8 /* AccessoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryManager.swift; sourceTree = "<group>"; };
+		58243D4C1C7FCB05009448E8 /* Accessory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accessory.swift; sourceTree = "<group>"; };
+		58725A071C8036B900FCCB46 /* CMD29.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMD29.swift; sourceTree = "<group>"; };
+		58725A091C80394500FCCB46 /* RDTv2Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTv2Channel.swift; sourceTree = "<group>"; };
+		58725A0B1C8040B200FCCB46 /* DeviceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		58725A0D1C8044E800FCCB46 /* RequestExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestExecutor.swift; sourceTree = "<group>"; };
+		58725A0F1C80463800FCCB46 /* RequestSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSet.swift; sourceTree = "<group>"; };
+		58725A111C80516B00FCCB46 /* EventReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventReceiver.swift; sourceTree = "<group>"; };
+		58725A131C80580600FCCB46 /* HomeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		58725A151C805BB000FCCB46 /* HomeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAPI.swift; sourceTree = "<group>"; };
+		58725A171C81E73700FCCB46 /* RDTSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTSession.swift; sourceTree = "<group>"; };
+		58725A191C81EFEA00FCCB46 /* ConnectionStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionStatus.swift; sourceTree = "<group>"; };
+		58EB67BE1C7D3844008F880B /* HomeLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLog.swift; sourceTree = "<group>"; };
+		58EB67C01C7D3895008F880B /* IOTCAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IOTCAPI.swift; path = ../IOTCAPI.swift; sourceTree = "<group>"; };
+		58EB67C21C7D47BF008F880B /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		58EB67C51C7D48D4008F880B /* NSData+ByteTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+ByteTool.swift"; sourceTree = "<group>"; };
+		58EB67C81C7D49B3008F880B /* IChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IChannel.swift; sourceTree = "<group>"; };
+		58EB67CA1C7D4A6A008F880B /* RDTv1Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTv1Channel.swift; sourceTree = "<group>"; };
+		58EB67E31C7E9B2D008F880B /* AVAPIs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAPIs.h; sourceTree = "<group>"; };
+		58EB67E41C7E9B2D008F880B /* IOTCAPIs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOTCAPIs.h; sourceTree = "<group>"; };
+		58EB67E51C7E9B2D008F880B /* IOTCWakeUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOTCWakeUp.h; sourceTree = "<group>"; };
+		58EB67E61C7E9B2D008F880B /* P2PTunnelAPIs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P2PTunnelAPIs.h; sourceTree = "<group>"; };
+		58EB67E71C7E9B2D008F880B /* RDTAPIs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDTAPIs.h; sourceTree = "<group>"; };
+		58EB67EA1C7E9B2D008F880B /* libIOTCAPIs_ALL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIOTCAPIs_ALL.a; sourceTree = "<group>"; };
+		58EB67F11C7E9D06008F880B /* RDTAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTAPI.swift; sourceTree = "<group>"; };
+		58EB67F31C7EA1AB008F880B /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		58EB67F51C7EA3CE008F880B /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		58EB67F81C7EA465008F880B /* ICommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICommand.swift; sourceTree = "<group>"; };
+		58EB67FA1C7EA4E6008F880B /* IProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IProtocol.swift; sourceTree = "<group>"; };
+		58EB67FC1C7EA52D008F880B /* CommandTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTool.swift; sourceTree = "<group>"; };
+		58EB68001C7EA62D008F880B /* JSONProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONProtocol.swift; sourceTree = "<group>"; };
+		58EB68021C7EA719008F880B /* CMDGetAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDGetAuthentication.swift; sourceTree = "<group>"; };
+		58EB68061C7EA808008F880B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		58EB68081C7EAD04008F880B /* ByteArrayProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteArrayProtocol.swift; sourceTree = "<group>"; };
+		58EB680A1C7EAD56008F880B /* CMD2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMD2.swift; sourceTree = "<group>"; };
+		58EB680C1C7FBF62008F880B /* CMD3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMD3.swift; sourceTree = "<group>"; };
+		58EB680E1C7FC2E8008F880B /* CMD7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMD7.swift; sourceTree = "<group>"; };
+		58EB68101C7FC457008F880B /* CMD17.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMD17.swift; sourceTree = "<group>"; };
+		58EB68121C7FC616008F880B /* CMD24.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMD24.swift; sourceTree = "<group>"; };
+		58FFB5C91C7C372F00559AE7 /* homesdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = homesdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58FFB5CC1C7C372F00559AE7 /* homesdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homesdk.h; sourceTree = "<group>"; };
+		58FFB5CE1C7C372F00559AE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58FFB5D41C7C37D300559AE7 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		58FFB5DB1C7C3C1600559AE7 /* ProductCodeSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCodeSet.swift; sourceTree = "<group>"; };
+		58FFB5DD1C7C41B500559AE7 /* AccessoryTypeSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryTypeSet.swift; sourceTree = "<group>"; };
+		58FFB5DF1C7C431D00559AE7 /* V1FunctionCodeSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V1FunctionCodeSet.swift; sourceTree = "<group>"; };
+		58FFB5E61C7D2DE600559AE7 /* V2FunctionCodeSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2FunctionCodeSet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58FFB5C51C7C372F00559AE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58EB67F01C7E9B2D008F880B /* libIOTCAPIs_ALL.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58EB67BD1C7D3835008F880B /* log */ = {
+			isa = PBXGroup;
+			children = (
+				58EB67BE1C7D3844008F880B /* HomeLog.swift */,
+			);
+			name = log;
+			sourceTree = "<group>";
+		};
+		58EB67C41C7D48CB008F880B /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				58EB67C51C7D48D4008F880B /* NSData+ByteTool.swift */,
+			);
+			name = tool;
+			sourceTree = "<group>";
+		};
+		58EB67C71C7D49A6008F880B /* channel */ = {
+			isa = PBXGroup;
+			children = (
+				58EB67C81C7D49B3008F880B /* IChannel.swift */,
+				58EB67CA1C7D4A6A008F880B /* RDTv1Channel.swift */,
+				58725A091C80394500FCCB46 /* RDTv2Channel.swift */,
+			);
+			name = channel;
+			sourceTree = "<group>";
+		};
+		58EB67CD1C7E906D008F880B /* IOTC */ = {
+			isa = PBXGroup;
+			children = (
+				58EB67C01C7D3895008F880B /* IOTCAPI.swift */,
+				58EB67F11C7E9D06008F880B /* RDTAPI.swift */,
+			);
+			name = IOTC;
+			sourceTree = "<group>";
+		};
+		58EB67E11C7E9B2D008F880B /* iotc */ = {
+			isa = PBXGroup;
+			children = (
+				58EB67E21C7E9B2D008F880B /* Include */,
+				58EB67E81C7E9B2D008F880B /* Lib */,
+			);
+			path = iotc;
+			sourceTree = "<group>";
+		};
+		58EB67E21C7E9B2D008F880B /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				58EB67E31C7E9B2D008F880B /* AVAPIs.h */,
+				58EB67E41C7E9B2D008F880B /* IOTCAPIs.h */,
+				58EB67E51C7E9B2D008F880B /* IOTCWakeUp.h */,
+				58EB67E61C7E9B2D008F880B /* P2PTunnelAPIs.h */,
+				58EB67E71C7E9B2D008F880B /* RDTAPIs.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		58EB67E81C7E9B2D008F880B /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				58EB67E91C7E9B2D008F880B /* iOS */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		58EB67E91C7E9B2D008F880B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				58EB67EA1C7E9B2D008F880B /* libIOTCAPIs_ALL.a */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		58EB67F71C7EA44B008F880B /* command */ = {
+			isa = PBXGroup;
+			children = (
+				58EB67FE1C7EA61C008F880B /* bytearray */,
+				58EB67FF1C7EA621008F880B /* json */,
+				58EB67FC1C7EA52D008F880B /* CommandTool.swift */,
+				58EB67F81C7EA465008F880B /* ICommand.swift */,
+				58EB67FA1C7EA4E6008F880B /* IProtocol.swift */,
+			);
+			name = command;
+			sourceTree = "<group>";
+		};
+		58EB67FE1C7EA61C008F880B /* bytearray */ = {
+			isa = PBXGroup;
+			children = (
+				58EB68081C7EAD04008F880B /* ByteArrayProtocol.swift */,
+				58EB680A1C7EAD56008F880B /* CMD2.swift */,
+				58EB680C1C7FBF62008F880B /* CMD3.swift */,
+				58EB680E1C7FC2E8008F880B /* CMD7.swift */,
+				58EB68101C7FC457008F880B /* CMD17.swift */,
+				58EB68121C7FC616008F880B /* CMD24.swift */,
+				58725A071C8036B900FCCB46 /* CMD29.swift */,
+			);
+			name = bytearray;
+			sourceTree = "<group>";
+		};
+		58EB67FF1C7EA621008F880B /* json */ = {
+			isa = PBXGroup;
+			children = (
+				58EB68021C7EA719008F880B /* CMDGetAuthentication.swift */,
+				58EB68001C7EA62D008F880B /* JSONProtocol.swift */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+		58EB68051C7EA7FE008F880B /* library */ = {
+			isa = PBXGroup;
+			children = (
+				58EB68061C7EA808008F880B /* SwiftyJSON.swift */,
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		58FFB5BF1C7C372F00559AE7 = {
+			isa = PBXGroup;
+			children = (
+				58EB68051C7EA7FE008F880B /* library */,
+				58EB67E11C7E9B2D008F880B /* iotc */,
+				58FFB5CB1C7C372F00559AE7 /* homesdk */,
+				58FFB5CA1C7C372F00559AE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58FFB5CA1C7C372F00559AE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58FFB5C91C7C372F00559AE7 /* homesdk.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58FFB5CB1C7C372F00559AE7 /* homesdk */ = {
+			isa = PBXGroup;
+			children = (
+				58FFB5CC1C7C372F00559AE7 /* homesdk.h */,
+				58EB67CD1C7E906D008F880B /* IOTC */,
+				58EB67C71C7D49A6008F880B /* channel */,
+				58EB67F71C7EA44B008F880B /* command */,
+				58EB67BD1C7D3835008F880B /* log */,
+				58FFB5E31C7D2DCA00559AE7 /* model */,
+				58EB67C41C7D48CB008F880B /* tool */,
+				58FFB5CE1C7C372F00559AE7 /* Info.plist */,
+				58243D4A1C7FC6EF009448E8 /* AccessoryManager.swift */,
+				58FFB5DD1C7C41B500559AE7 /* AccessoryTypeSet.swift */,
+				58FFB5D41C7C37D300559AE7 /* AppConfig.swift */,
+				58725A0B1C8040B200FCCB46 /* DeviceManager.swift */,
+				58725A111C80516B00FCCB46 /* EventReceiver.swift */,
+				58725A151C805BB000FCCB46 /* HomeAPI.swift */,
+				58725A131C80580600FCCB46 /* HomeService.swift */,
+				58EB67C21C7D47BF008F880B /* Log.swift */,
+				58FFB5DB1C7C3C1600559AE7 /* ProductCodeSet.swift */,
+			);
+			path = homesdk;
+			sourceTree = "<group>";
+		};
+		58FFB5E31C7D2DCA00559AE7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				58FFB5E41C7D2DCF00559AE7 /* bytearray */,
+				58FFB5E51C7D2DDA00559AE7 /* json */,
+				58243D4C1C7FCB05009448E8 /* Accessory.swift */,
+				58EB67F51C7EA3CE008F880B /* Device.swift */,
+				58EB67F31C7EA1AB008F880B /* Request.swift */,
+				58725A0D1C8044E800FCCB46 /* RequestExecutor.swift */,
+				58725A0F1C80463800FCCB46 /* RequestSet.swift */,
+				58725A171C81E73700FCCB46 /* RDTSession.swift */,
+				58725A191C81EFEA00FCCB46 /* ConnectionStatus.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		58FFB5E41C7D2DCF00559AE7 /* bytearray */ = {
+			isa = PBXGroup;
+			children = (
+				58FFB5DF1C7C431D00559AE7 /* V1FunctionCodeSet.swift */,
+			);
+			name = bytearray;
+			sourceTree = "<group>";
+		};
+		58FFB5E51C7D2DDA00559AE7 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				58FFB5E61C7D2DE600559AE7 /* V2FunctionCodeSet.swift */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		58FFB5C61C7C372F00559AE7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58EB67EF1C7E9B2D008F880B /* RDTAPIs.h in Headers */,
+				58EB67EB1C7E9B2D008F880B /* AVAPIs.h in Headers */,
+				58EB67EC1C7E9B2D008F880B /* IOTCAPIs.h in Headers */,
+				58EB67ED1C7E9B2D008F880B /* IOTCWakeUp.h in Headers */,
+				58EB67EE1C7E9B2D008F880B /* P2PTunnelAPIs.h in Headers */,
+				58FFB5CD1C7C372F00559AE7 /* homesdk.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		58FFB5C81C7C372F00559AE7 /* homesdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58FFB5D11C7C372F00559AE7 /* Build configuration list for PBXNativeTarget "homesdk" */;
+			buildPhases = (
+				58FFB5C41C7C372F00559AE7 /* Sources */,
+				58FFB5C51C7C372F00559AE7 /* Frameworks */,
+				58FFB5C61C7C372F00559AE7 /* Headers */,
+				58FFB5C71C7C372F00559AE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = homesdk;
+			productName = homesdk;
+			productReference = 58FFB5C91C7C372F00559AE7 /* homesdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58FFB5C01C7C372F00559AE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = TUTK;
+				TargetAttributes = {
+					58FFB5C81C7C372F00559AE7 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 58FFB5C31C7C372F00559AE7 /* Build configuration list for PBXProject "homesdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58FFB5BF1C7C372F00559AE7;
+			productRefGroup = 58FFB5CA1C7C372F00559AE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58FFB5C81C7C372F00559AE7 /* homesdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58FFB5C71C7C372F00559AE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58FFB5C41C7C372F00559AE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58725A0C1C8040B200FCCB46 /* DeviceManager.swift in Sources */,
+				58EB67F91C7EA465008F880B /* ICommand.swift in Sources */,
+				58FFB5D51C7C37D300559AE7 /* AppConfig.swift in Sources */,
+				58EB67F41C7EA1AB008F880B /* Request.swift in Sources */,
+				58EB68071C7EA808008F880B /* SwiftyJSON.swift in Sources */,
+				58EB68091C7EAD04008F880B /* ByteArrayProtocol.swift in Sources */,
+				58EB68011C7EA62D008F880B /* JSONProtocol.swift in Sources */,
+				58EB680D1C7FBF62008F880B /* CMD3.swift in Sources */,
+				58725A0E1C8044E800FCCB46 /* RequestExecutor.swift in Sources */,
+				58EB68031C7EA719008F880B /* CMDGetAuthentication.swift in Sources */,
+				58725A081C8036B900FCCB46 /* CMD29.swift in Sources */,
+				58EB67C61C7D48D4008F880B /* NSData+ByteTool.swift in Sources */,
+				58EB67CB1C7D4A6A008F880B /* RDTv1Channel.swift in Sources */,
+				58EB67FB1C7EA4E6008F880B /* IProtocol.swift in Sources */,
+				58725A141C80580600FCCB46 /* HomeService.swift in Sources */,
+				58EB67C11C7D3895008F880B /* IOTCAPI.swift in Sources */,
+				58EB67F61C7EA3CE008F880B /* Device.swift in Sources */,
+				58725A0A1C80394500FCCB46 /* RDTv2Channel.swift in Sources */,
+				58EB67C91C7D49B3008F880B /* IChannel.swift in Sources */,
+				58EB67BF1C7D3844008F880B /* HomeLog.swift in Sources */,
+				58FFB5E71C7D2DE600559AE7 /* V2FunctionCodeSet.swift in Sources */,
+				58725A1A1C81EFEA00FCCB46 /* ConnectionStatus.swift in Sources */,
+				58EB680F1C7FC2E8008F880B /* CMD7.swift in Sources */,
+				58725A121C80516B00FCCB46 /* EventReceiver.swift in Sources */,
+				58EB67F21C7E9D06008F880B /* RDTAPI.swift in Sources */,
+				58FFB5DE1C7C41B500559AE7 /* AccessoryTypeSet.swift in Sources */,
+				58243D4B1C7FC6EF009448E8 /* AccessoryManager.swift in Sources */,
+				58EB680B1C7EAD56008F880B /* CMD2.swift in Sources */,
+				58EB68131C7FC616008F880B /* CMD24.swift in Sources */,
+				58243D4D1C7FCB05009448E8 /* Accessory.swift in Sources */,
+				58FFB5E01C7C431D00559AE7 /* V1FunctionCodeSet.swift in Sources */,
+				58725A181C81E73700FCCB46 /* RDTSession.swift in Sources */,
+				58EB68111C7FC457008F880B /* CMD17.swift in Sources */,
+				58725A161C805BB000FCCB46 /* HomeAPI.swift in Sources */,
+				58725A101C80463800FCCB46 /* RequestSet.swift in Sources */,
+				58EB67FD1C7EA52D008F880B /* CommandTool.swift in Sources */,
+				58EB67C31C7D47BF008F880B /* Log.swift in Sources */,
+				58FFB5DC1C7C3C1600559AE7 /* ProductCodeSet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58FFB5CF1C7C372F00559AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58FFB5D01C7C372F00559AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		58FFB5D21C7C372F00559AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = homesdk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/homesdk",
+					"$(PROJECT_DIR)/iotc/Lib/iOS",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tutk.homesdk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58FFB5D31C7C372F00559AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = homesdk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/homesdk",
+					"$(PROJECT_DIR)/iotc/Lib/iOS",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tutk.homesdk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58FFB5C31C7C372F00559AE7 /* Build configuration list for PBXProject "homesdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58FFB5CF1C7C372F00559AE7 /* Debug */,
+				58FFB5D01C7C372F00559AE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58FFB5D11C7C372F00559AE7 /* Build configuration list for PBXNativeTarget "homesdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58FFB5D21C7C372F00559AE7 /* Debug */,
+				58FFB5D31C7C372F00559AE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58FFB5C01C7C372F00559AE7 /* Project object */;
+}

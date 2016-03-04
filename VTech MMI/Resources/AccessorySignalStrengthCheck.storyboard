@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3qP-Tj-iQL">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Test signal strength-->
+        <scene sceneID="WAw-cd-PLa">
+            <objects>
+                <viewController id="3qP-Tj-iQL" customClass="VTAccessorySignalStrengthTestHintVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Gb-J8-vnZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="T2G-3e-IHk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2wy-GJ-9KU">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hij-dI-cgh">
+                                <rect key="frame" x="113" y="60" width="150" height="150"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Hij-dI-cgh" secondAttribute="height" multiplier="1:1" id="Kmh-MU-Y2L"/>
+                                    <constraint firstAttribute="width" constant="150" id="N93-Zj-OjQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please trigger DEVICE_NAME now. Then tap next." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8a-3c-ogd">
+                                <rect key="frame" x="20" y="247" width="335" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3b-DT-UlH">
+                                <rect key="frame" x="215" y="539" width="140" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="0rn-RW-S8X"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="3uL-Ix-kuB"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="140" id="E8t-S1-Awd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="H1C-gF-JPa"/>
+                                    <constraint firstAttribute="height" constant="44" id="WHj-Ms-E6m"/>
+                                    <constraint firstAttribute="width" constant="140" id="s28-kN-zGF"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="H1C-gF-JPa"/>
+                                        <exclude reference="0rn-RW-S8X"/>
+                                        <exclude reference="3uL-Ix-kuB"/>
+                                        <exclude reference="E8t-S1-Awd"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="PuY-fZ-Lgg" kind="show" identifier="showTestSignalStrengthSegue" id="SOh-MD-Csq">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="A8a-3c-ogd" secondAttribute="trailing" constant="20" id="RtY-kN-QT9"/>
+                            <constraint firstItem="Hij-dI-cgh" firstAttribute="centerX" secondItem="2wy-GJ-9KU" secondAttribute="centerX" id="ScB-rx-6wF"/>
+                            <constraint firstItem="A8a-3c-ogd" firstAttribute="top" secondItem="Hij-dI-cgh" secondAttribute="bottom" constant="37" id="WaZ-NG-8P7"/>
+                            <constraint firstItem="A8a-3c-ogd" firstAttribute="leading" secondItem="2wy-GJ-9KU" secondAttribute="leading" constant="20" id="Xu9-tu-SbH"/>
+                            <constraint firstItem="Hij-dI-cgh" firstAttribute="top" secondItem="1Gb-J8-vnZ" secondAttribute="bottom" constant="60" id="YOF-Ro-Lhs"/>
+                            <constraint firstAttribute="trailing" secondItem="g3b-DT-UlH" secondAttribute="trailing" constant="20" id="awC-Fb-kIX"/>
+                            <constraint firstItem="T2G-3e-IHk" firstAttribute="top" secondItem="g3b-DT-UlH" secondAttribute="bottom" constant="20" id="fgy-eg-lyj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Test signal strength" id="rqB-Sq-x43"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="hintImageView" destination="Hij-dI-cgh" id="YfU-1e-OHK"/>
+                        <outlet property="hintLabel" destination="A8a-3c-ogd" id="0c9-WH-vFr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7n-QF-YEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1677.5" y="339.5"/>
+        </scene>
+        <!--Test signal strength-->
+        <scene sceneID="hoo-zI-KYC">
+            <objects>
+                <viewController id="PuY-fZ-Lgg" customClass="VTAccessorySignalStrengthTestVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PTT-dM-s1j"/>
+                        <viewControllerLayoutGuide type="bottom" id="FoH-wb-8TO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mvm-Uc-Hb9">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awaiting signal. Please wait..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZc-fF-MUm">
+                                <rect key="frame" x="20" y="100" width="335" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aQS-Eo-EbU">
+                                <rect key="frame" x="20" y="171" width="335" height="3"/>
+                                <animations/>
+                            </progressView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DZc-fF-MUm" secondAttribute="trailing" constant="20" id="2cy-Ll-S3i"/>
+                            <constraint firstItem="DZc-fF-MUm" firstAttribute="leading" secondItem="mvm-Uc-Hb9" secondAttribute="leading" constant="20" id="Z2T-Mg-nvq"/>
+                            <constraint firstItem="aQS-Eo-EbU" firstAttribute="leading" secondItem="mvm-Uc-Hb9" secondAttribute="leading" constant="20" id="a0J-qk-dfz"/>
+                            <constraint firstItem="DZc-fF-MUm" firstAttribute="top" secondItem="PTT-dM-s1j" secondAttribute="bottom" constant="100" id="ieL-pW-XfM"/>
+                            <constraint firstItem="aQS-Eo-EbU" firstAttribute="top" secondItem="DZc-fF-MUm" secondAttribute="bottom" constant="50" id="iwj-oJ-a1e"/>
+                            <constraint firstAttribute="trailing" secondItem="aQS-Eo-EbU" secondAttribute="trailing" constant="20" id="uu7-1n-p2L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Test signal strength" id="Rww-gI-lyS"/>
+                    <connections>
+                        <outlet property="progressView" destination="aQS-Eo-EbU" id="nNL-ec-6QY"/>
+                        <outlet property="promptLabel" destination="DZc-fF-MUm" id="ZhK-69-ZsD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VtT-Vd-uiV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2253.5" y="339.5"/>
+        </scene>
+    </scenes>
+</document>
